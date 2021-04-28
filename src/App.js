@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Button href="#">Link</Button> <Button type="submit">Button</Button>{' '}
+  <Button as="input" type="button" value="Input" />{' '}
+  <Button as="input" type="submit" value="Submit" />{' '}
+  <Button as="input" type="reset" value="Reset" />
+  <p>Welcome to my Platform</p>
     </div>
   );
 }
